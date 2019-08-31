@@ -1,4 +1,4 @@
-# CT-radiomics
+# CT Radiomics Analysis
 
 This repository contains some project files, if not all, for my master thesis on CT-radiomics Analysis for Lung Cancer Classification using Machine Learning Techniques, for the master study in IoT for eHealth.
 
