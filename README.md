@@ -4,7 +4,7 @@ This repository contains some project files, if not all, for my master thesis on
 
 ## Reference
 
-L. Citraro, S. Mahmoodi, A. Darekar, B. Vollmer, ‘Extended three-dimensional rotation invariant local binary patterns’, 2017, Image and Vision Computing.
+L. Citraro, S. Mahmoodi, A. Darekar, B. Vollmer, ‘Extended three-dimensional rotation invariant local binary patterns’, 2017, Image and Vision Computing. (github: https://github.com/lcit/ext3DLBP)
 
 M. Ligeroy, G. Torres, C. Sanchez, K. Diaz-Chito, R. Perezy, and D. Gil, 'Selection of Radiomics Features based on their Reproducibility', IEEE Engineering in Medicine and Biology Society (EMBC), 2019.
 
