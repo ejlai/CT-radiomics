@@ -10,11 +10,13 @@ contains all the results (scores and ROC plots) for the selected PyRadiomics fea
 scores/0831_Experiments_and_results_lbp.xlsx
 contains all the scores for experiments based on the LBP data set
 
-(plots are located in plots folder)
+(plots are located in the plots folder)
 
 ## Others
 mm: MinMax Scaler
+
 ss: Standard Scaler
+
 rs: Robust Scaler
 
 ## Reference
