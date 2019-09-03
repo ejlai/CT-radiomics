@@ -8,8 +8,6 @@ change log:
     Test MinMaxScaler(), RobustScaler() instead of StandardScaler()
     8/22: nodule level to patient level evaluations
 """
-
-#Logistic Regression tuning
 import pickle
 #from sklearn.ensemble import RandomForestClassifier as RF
 from sklearn.svm import SVC
@@ -23,32 +21,8 @@ def warn(*args, **kwargs): pass
 import warnings
 warnings.warn = warn
 
-
 #pickle files
-in_dir = '../db/pickles/'
-
-
-def perform_evaluation(X, y, test, c, k, mytext):
-# pass initial state to generate same indexes
-    #model = RF(random_state=1, max_depth=m, n_estimators=n)
-    model = SVC(random_state=1, C = c, kernel=k)
-    model.probability = True
-    model.fit(X, y)    
-    predictions=model.predict(test)
-    precision, recall, fscore, support = score(y_test, predictions)
-    fpr, tpr, threshold = roc_curve(y_test, model.predict_proba(test)[:,1])#model.predict_proba(X_test)[:,1]
-    auc1 = auc(fpr, tpr)
-    print()
-    print(mytext)
-    print("Predictions: {}".format(predictions))
-    print("Y_test: {}".format(y_test))
-    print()
-    print('precision: {}'.format(precision)) #class 0, 1
-    print('recall: {}'.format(recall)) #class 0, 1
-    #print('fscore: {}'.format(fscore))
-    #print('support: {}'.format(support))
-    print('roc_auc_score: {:.2f}'.format(auc1))
-    print()
+in_dir = '../db/'
 
 #b='_default' #bins = [12, 20, 28, 36, 44,'_default']
 #joint2d, concat2d, concat3d, y_train
