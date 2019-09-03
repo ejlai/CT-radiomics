@@ -14,7 +14,7 @@ import warnings
 warnings.warn = warn
 
 #file that creates the pickle: prepare_radiomics_features_26_train_test_pickles.py
-picklefile="../db/pickles/selected_radiomics_train_test_sets.pickle"
+picklefile="../db/selected_radiomics_train_test_sets.pickle"
 
 #load dataset
 import pickle
@@ -23,18 +23,18 @@ with open(picklefile,'rb') as f:
     #X_train26, X_test26, y_train26, y_test26
     X_train, X_test, y_train, y_test = pickle.load(f)
 
-'''Standardize the Data'''
+'''standardize data'''
 from sklearn.preprocessing import RobustScaler #StandardScaler, MinMaxScaler
 scaler = RobustScaler()#MinMaxScaler()  StandardScaler()
 
-# Fit on training set only.
+# fit on training set only.
 scaler.fit(X_train)
 
 # Apply transform to both the training set and the test set.
 X_train = scaler.transform(X_train)
 X_test = scaler.transform(X_test)
 
-'''Feature reduction'''
+'''feature reduction'''
 "Dimensionality reduciton #1 - PCA"
 from sklearn.decomposition import PCA
 pca = PCA(.95)
